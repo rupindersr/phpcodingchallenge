@@ -8,6 +8,9 @@ function numberOfHotSpots(string $str) {
   if($type!== string){
     return 0;
   }
+  if(empty($str)){
+    return 0;
+  }
 
   $str_ = str_replace(" ", "", $str);
   $arr = str_split($str_);
@@ -44,8 +47,9 @@ return $count;
 }
 // echo numberOfHotSpots(["***#P#***"]);
 
-echo numberOfHotSpots("*   P  *   *"); // output should be 3
-// echo numberOfHotSpots("*  * #  * P # * #"); // output should be 1
+// echo numberOfHotSpots("*   P  *   *"); // output should be 3
+// echo numberOfHotSpots(""); // output should be 3
+echo numberOfHotSpots("*  * #  * P # * #"); // output should be 1
 // echo numberOfHotSpots("***#P#***");  // output should be 0
 
 ?>

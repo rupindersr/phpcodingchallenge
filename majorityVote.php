@@ -7,7 +7,8 @@ function majorityVote(array $arr) {
     }
 
     if (count($arr) === 1) return $arr[0];
-    
+    if (count($arr) === 0) return NULL;
+
     $votes = [];
     foreach ($arr as $val) {
         $votes[$val]++;
@@ -21,7 +22,7 @@ function majorityVote(array $arr) {
 
 // echo majorityVote(["C",  "A", "B",  "C", "B", "C", "B", "C", "C"]) ;
 // echo majorityVote(["A", "A", "B"]);  // output should be  "A"
-echo majorityVote(["A", "A", "A", "B", "C", "A"])  // output should be  "A"
+echo majorityVote(["A", "A",  "B", "C", "A"])  // output should be  "A"
 // echo majorityVote(["C", "B", "B", "C", "C", "C"]);  // output should be  NULL
 // echo majorityVote([]) //Output should be NULL
 
