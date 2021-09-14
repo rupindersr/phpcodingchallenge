@@ -29,7 +29,7 @@ function secret(string $text): string
 
 // echo secret("div>p.a$$*2"); // output should be  `<div><p class="a01"></p><p class="a02"></p></div>`
 // echo secret("ul>li.b$*3"); // output should be `<ul><li class="b1"></li><li class="b2"></li><li class="b3"></li></ul>`
- echo secret("p>h1.c$$$*2"); // output should be`<p><h1 class="c001"></h1><h1 class="c002"></h1></p>`
+echo secret("p>h1.c$$$*2"); // output should be`<p><h1 class="c001"></h1><h1 class="c002"></h1></p>`
 //  echo secret(""); // output should be`<p><h1 class="c001"></h1><h1 class="c002"></h1></p>`
 
 ?>

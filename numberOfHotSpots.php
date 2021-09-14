@@ -4,7 +4,6 @@ function numberOfHotSpots(string $str) {
 
   $type = gettype($str);
   //Check if type is not string
-  // echo $type; exit;
   if($type!== string){
     return 0;
   }
@@ -46,7 +45,6 @@ return $count;
   
 }
 // echo numberOfHotSpots(["***#P#***"]);
-
 // echo numberOfHotSpots("*   P  *   *"); // output should be 3
 // echo numberOfHotSpots(""); // output should be 3
 echo numberOfHotSpots("*  * #  * P # * #"); // output should be 1
